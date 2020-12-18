@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #03506f;
+}
+
+.App {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 2px #03506f solid;
+  outline: none;
+  background: transparent;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.btn__container button {
+  margin: 1rem;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.image {
+  height: 200px;
+}
+
+.card {
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card__container {
+    grid-template-columns: 1fr;
+  }
+}
